@@ -28,6 +28,7 @@ public class UserManagementPage extends BasePage {
     public void sortUserGroups(String expectedOrder){
 
         for (int i = 0; i < 4; i++) {
+            Thread.wait(2);
             groupSortBtn.click();
             Thread.wait(2);
             String actualOrder = groupSortBtn.getAttribute("aria-sort");
@@ -40,7 +41,5 @@ public class UserManagementPage extends BasePage {
     public String getFirstUserGroupName(){
         return Driver.getDriver().findElement(By.xpath("//tr[1]/td[5]")).getText();
     }
-
-
 
 }

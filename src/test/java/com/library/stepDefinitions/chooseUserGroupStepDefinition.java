@@ -33,6 +33,7 @@ public class chooseUserGroupStepDefinition {
                userManagementPage.sortUserGroups("descending");
                String librarianUserGroup = userManagementPage.getFirstUserGroupName();
                Assert.assertEquals(string, librarianUserGroup);
+               break;
        }
 
     }
