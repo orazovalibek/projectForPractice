@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/library/stepDefinitions",
         dryRun = false,
-        tags = "@choose_librarian"
+        tags = "@inactive"
 )
 
 public class CucumberRunner {
